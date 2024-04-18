@@ -35,5 +35,6 @@ jobs:
         git pull origin master
         git fetch --all
         git commit -am "Daily Commit bois"
+        git fetch --all
         git pull origin master
-        git push origin master
+        git push origin master --verbose
