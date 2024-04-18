@@ -30,11 +30,21 @@ jobs:
         git config --global user.email "suvan.gowrishanker.204@gmail.com"
         git config --global user.name "greeenboi"
     
-    - name: Commit changes
+    - name: Pulling Changes
       run : |
         git pull origin
-        git fetch --all
+    
+    - name: Fetch Changes
+      run : |
+        git fetch origin
+      
+    - name: Commit Changes
+      run: |
         git commit -am "Daily Commit bois"
-        git fetch --all
-        git pull origin 
-        git push origin 
+      
+    - name: Push Changes
+      run: |
+        git push origin
+    
+      
+      
