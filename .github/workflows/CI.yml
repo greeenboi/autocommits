@@ -29,5 +29,6 @@ jobs:
       run: |
         git config --global user.email "suvan.gowrishanker.204@gmail.com"
         git config --global user.name "greeenboi"
+        git pull
         git commit -am "Daily Commit bois"
         git push
