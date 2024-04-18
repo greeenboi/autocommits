@@ -33,5 +33,7 @@ jobs:
     - name: Commit changes
       run : |
         git pull origin master
+        git fetch --all
         git commit -am "Daily Commit bois"
+        git pull origin master
         git push origin master
